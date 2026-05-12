@@ -1,5 +1,13 @@
 #include "tickettablemodel.h"
 
+int TicketTableModel::rowCount(const QModelIndex &parent) const {
+    return parent.isValid() ? 0 : tickets.size();
+}
+
+int TicketTableModel::columnCount(const QModelIndex &parent) const {
+    return parent.isValid() ? 0 : ColCount;
+}
+
 QVariant TicketTableModel::data(const QModelIndex &index, int role) const {
     if (!index.isValid() || role != Qt::DisplayRole) return QVariant();
 
@@ -28,8 +36,7 @@ QVariant TicketTableModel::headerData(int section, Qt::Orientation orientation, 
 }
 
 void TicketTableModel::addTicket(const Ticket &ticket) {
-    int row = tickets.size();
-    beginInsertRows(QModelIndex(), row, row);
+    beginInsertRows(QModelIndex(), tickets.size(), tickets.size());
     tickets.append(ticket);
     endInsertRows();
 }
@@ -51,4 +58,8 @@ void TicketTableModel::setItems(const QVector<Ticket> &newTickets) {
     beginResetModel();
     tickets = newTickets;
     endResetModel();
+}
+
+Ticket TicketTableModel::getTicket(int row) const {
+    return tickets.value(row);
 }

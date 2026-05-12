@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QSortFilterProxyModel>
 #include "tickettablemodel.h"
 #include "csvticketrepository.h"
 
@@ -22,12 +23,17 @@ private slots:
     void onActionDelete();
     void updateActions();
 
+    void onSearchTextChanged(const QString &text);
+    void onBtnClearClicked();
+    void onTableDoubleClicked(const QModelIndex &index);
+
 private:
     void loadData();
     void saveData();
 
     Ui::MainWindow *ui;
     TicketTableModel *model;
+    QSortFilterProxyModel *proxyModel;
     CsvTicketRepository *repository;
     int m_nextId;
 };

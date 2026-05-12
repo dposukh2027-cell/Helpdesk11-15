@@ -20,22 +20,18 @@ public:
 
     explicit TicketTableModel(QObject *parent = nullptr) : QAbstractTableModel(parent) {}
 
-    int rowCount(const QModelIndex &parent = QModelIndex()) const override {
-        return parent.isValid() ? 0 : tickets.size();
-    }
-    int columnCount(const QModelIndex &parent = QModelIndex()) const override {
-        return parent.isValid() ? 0 : ColCount;
-    }
-
+    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    int columnCount(const QModelIndex &parent = QModelIndex()) const override;
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
     QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
+
 
     void addTicket(const Ticket &ticket);
     void updateTicket(int row, const Ticket &ticket);
     void removeTicket(int row);
-    Ticket getTicket(int row) const { return tickets.value(row); }
-
     void setItems(const QVector<Ticket> &newTickets);
+
+    Ticket getTicket(int row) const;
     const QVector<Ticket>& items() const { return tickets; }
 
 private:
