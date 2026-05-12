@@ -3,7 +3,6 @@
  <class>TicketDialog</class>
  <widget class="QDialog" name="TicketDialog">
   <property name="geometry">
-<<<<<<< HEAD
    <rect>
     <x>0</x>
     <y>0</y>
@@ -13,15 +12,11 @@
   </property>
   <property name="windowTitle">
    <string>Ticket Details</string>
-=======
-   <rect><x>0</x><y>0</y><width>450</width><height>400</height></rect>
->>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <layout class="QFormLayout" name="formLayout">
      <item row="0" column="0">
-<<<<<<< HEAD
       <widget class="QLabel" name="labelID">
        <property name="text">
         <string>ID:</string>
@@ -46,29 +41,16 @@
         <string>Тема:</string>
        </property>
       </widget>
-=======
-      <widget class="QLabel" name="labelID"><property name="text"><string>ID:</string></property></widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="valID"><property name="text"><string>1</string></property></widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="labelTitle"><property name="text"><string>Title:</string></property></widget>
->>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
      </item>
      <item row="1" column="1">
       <widget class="QLineEdit" name="editTitle"/>
      </item>
      <item row="2" column="0">
-<<<<<<< HEAD
       <widget class="QLabel" name="labelPriority">
        <property name="text">
         <string>Пріоритет:</string>
        </property>
       </widget>
-=======
-      <widget class="QLabel" name="labelPriority"><property name="text"><string>Priority:</string></property></widget>
->>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
      </item>
      <item row="2" column="1">
       <widget class="QComboBox" name="comboPriority">
@@ -78,15 +60,11 @@
       </widget>
      </item>
      <item row="3" column="0">
-<<<<<<< HEAD
       <widget class="QLabel" name="labelStatus">
        <property name="text">
         <string>Статус:</string>
        </property>
       </widget>
-=======
-      <widget class="QLabel" name="labelStatus"><property name="text"><string>Status:</string></property></widget>
->>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
      </item>
      <item row="3" column="1">
       <widget class="QComboBox" name="comboStatus">
@@ -98,7 +76,6 @@
     </layout>
    </item>
    <item>
-<<<<<<< HEAD
     <widget class="QLabel" name="labelDesc">
      <property name="text">
       <string>Опис проблеми:</string>
@@ -145,29 +122,10 @@
        </property>
       </widget>
      </item>
-=======
-    <widget class="QLabel" name="labelDesc"><property name="text"><string>Description:</string></property></widget>
-   </item>
-   <item>
-    <widget class="QPlainTextEdit" name="editDescription">
-     <property name="placeholderText"><string>Enter problem details...</string></property>
-    </widget>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="buttonLayout">
-     <item><spacer name="horizontalSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
-     <item><widget class="QPushButton" name="btnEdit"><property name="text"><string>Edit</string></property></widget></item>
-     <item><widget class="QPushButton" name="btnSave"><property name="text"><string>Save</string></property></widget></item>
-     <item><widget class="QPushButton" name="btnCancel"><property name="text"><string>Cancel</string></property></widget></item>
-     <item><widget class="QPushButton" name="btnClose"><property name="text"><string>Close</string></property></widget></item>
->>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
     </layout>
    </item>
   </layout>
  </widget>
-<<<<<<< HEAD
  <resources/>
  <connections/>
-=======
->>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
 </ui>

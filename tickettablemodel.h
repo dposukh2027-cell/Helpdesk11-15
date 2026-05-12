@@ -3,7 +3,6 @@
 
 #include <QAbstractTableModel>
 #include <QVector>
-#include <QDateTime>
 
 struct Ticket {
     int id;

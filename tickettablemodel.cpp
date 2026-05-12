@@ -18,10 +18,10 @@ QVariant TicketTableModel::headerData(int section, Qt::Orientation orientation, 
     if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
         switch (section) {
         case IdCol: return "ID";
-        case TitleCol: return "Title";
-        case PriorityCol: return "Priority";
-        case StatusCol: return "Status";
-        case CreatedAtCol: return "Created At";
+        case TitleCol: return "Тема";
+        case PriorityCol: return "Пріоритет";
+        case StatusCol: return "Статус";
+        case CreatedAtCol: return "Створено";
         }
     }
     return QVariant();
