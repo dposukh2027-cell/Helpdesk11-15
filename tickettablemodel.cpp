@@ -46,3 +46,9 @@ void TicketTableModel::removeTicket(int row) {
     tickets.removeAt(row);
     endRemoveRows();
 }
+
+void TicketTableModel::setItems(const QVector<Ticket> &newTickets) {
+    beginResetModel();
+    tickets = newTickets;
+    endResetModel();
+}

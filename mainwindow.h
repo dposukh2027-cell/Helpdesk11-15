@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "tickettablemodel.h"
+#include "csvticketrepository.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,7 +23,12 @@ private slots:
     void updateActions();
 
 private:
+    void loadData();
+    void saveData();
+
     Ui::MainWindow *ui;
     TicketTableModel *model;
+    CsvTicketRepository *repository;
+    int m_nextId;
 };
 #endif

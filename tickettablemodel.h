@@ -35,6 +35,9 @@ public:
     void removeTicket(int row);
     Ticket getTicket(int row) const { return tickets.value(row); }
 
+    void setItems(const QVector<Ticket> &newTickets);
+    const QVector<Ticket>& items() const { return tickets; }
+
 private:
     QVector<Ticket> tickets;
 };
