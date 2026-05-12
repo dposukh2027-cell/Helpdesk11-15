@@ -1,0 +1,15 @@
+# Сборка
+build/
+build-*/
+CMakeLists.txt.user
+
+# Временные файлы системы и IDE
+.vscode/
+.idea/
+*.swp
+*.DS_Store
+
+# Бинарники
+*.exe
+*.dll
+*.app

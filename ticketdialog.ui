@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TicketDialog</class>
+ <widget class="QDialog" name="TicketDialog">
+  <property name="geometry">
+<<<<<<< HEAD
+   <rect><x>0</x><y>0</y><width>450</width><height>400</height></rect>
+=======
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ticket Details</string>
+>>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+<<<<<<< HEAD
+      <widget class="QLabel" name="labelID"><property name="text"><string>ID:</string></property></widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="valID"><property name="text"><string>1</string></property></widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelTitle"><property name="text"><string>Title:</string></property></widget>
+=======
+      <widget class="QLabel" name="labelID">
+       <property name="text">
+        <string>ID:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="valID">
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelTitle">
+       <property name="text">
+        <string>Тема:</string>
+       </property>
+      </widget>
+>>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="editTitle"/>
+     </item>
+     <item row="2" column="0">
+<<<<<<< HEAD
+      <widget class="QLabel" name="labelPriority"><property name="text"><string>Priority:</string></property></widget>
+=======
+      <widget class="QLabel" name="labelPriority">
+       <property name="text">
+        <string>Пріоритет:</string>
+       </property>
+      </widget>
+>>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="comboPriority">
+       <item><property name="text"><string>Low</string></property></item>
+       <item><property name="text"><string>Medium</string></property></item>
+       <item><property name="text"><string>High</string></property></item>
+      </widget>
+     </item>
+     <item row="3" column="0">
+<<<<<<< HEAD
+      <widget class="QLabel" name="labelStatus"><property name="text"><string>Status:</string></property></widget>
+=======
+      <widget class="QLabel" name="labelStatus">
+       <property name="text">
+        <string>Статус:</string>
+       </property>
+      </widget>
+>>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="comboStatus">
+       <item><property name="text"><string>New</string></property></item>
+       <item><property name="text"><string>Open</string></property></item>
+       <item><property name="text"><string>Closed</string></property></item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+<<<<<<< HEAD
+    <widget class="QLabel" name="labelDesc"><property name="text"><string>Description:</string></property></widget>
+   </item>
+   <item>
+    <widget class="QPlainTextEdit" name="editDescription">
+     <property name="placeholderText"><string>Enter problem details...</string></property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item><spacer name="horizontalSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+     <item><widget class="QPushButton" name="btnEdit"><property name="text"><string>Edit</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnSave"><property name="text"><string>Save</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnCancel"><property name="text"><string>Cancel</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnClose"><property name="text"><string>Close</string></property></widget></item>
+=======
+    <widget class="QLabel" name="labelDesc">
+     <property name="text">
+      <string>Опис проблеми:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPlainTextEdit" name="editDescription"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnEdit">
+       <property name="text">
+        <string>Змінити</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSave">
+       <property name="text">
+        <string>Зберегти</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="text">
+        <string>Скасувати</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnClose">
+       <property name="text">
+        <string>Закрити</string>
+       </property>
+      </widget>
+     </item>
+>>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+    </layout>
+   </item>
+  </layout>
+ </widget>
+<<<<<<< HEAD
+=======
+ <resources/>
+ <connections/>
+>>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+</ui>
