@@ -3,11 +3,12 @@
 
 #include <QMainWindow>
 <<<<<<< HEAD
+#include <QLabel>
+#include "tickettablemodel.h"
+=======
 #include <QStandardItemModel>
 #include <QLabel>
-=======
-#include "tickettablemodel.h"
->>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+>>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,19 +25,19 @@ private slots:
     void onActionView();
     void onActionEdit();
 <<<<<<< HEAD
+    void onActionDelete();
+    void updateActions();
+=======
+>>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
     void onClearFilters();
 
 private:
     Ui::MainWindow *ui;
-    QStandardItemModel *model;
-    QLabel *lblStats;
-=======
-    void onActionDelete();
-    void updateActions();
-
-private:
-    Ui::MainWindow *ui;
+<<<<<<< HEAD
     TicketTableModel *model;
->>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+=======
+    QStandardItemModel *model;
+>>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
+    QLabel *lblStats;
 };
 #endif

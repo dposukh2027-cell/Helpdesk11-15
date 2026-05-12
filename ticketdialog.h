@@ -3,40 +3,44 @@
 
 #include <QDialog>
 <<<<<<< HEAD
-=======
 #include "tickettablemodel.h"
->>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+=======
+>>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
 
 namespace Ui { class TicketDialog; }
 
 class TicketDialog : public QDialog {
     Q_OBJECT
+<<<<<<< HEAD
+
 public:
     enum class Mode { View, Edit, New };
-<<<<<<< HEAD
-    explicit TicketDialog(Mode mode, QWidget *parent = nullptr);
-    ~TicketDialog();
 
-private slots:
-    void onEditClicked();
-=======
     explicit TicketDialog(Mode mode, const Ticket &ticket = {}, QWidget *parent = nullptr);
     ~TicketDialog();
 
+
     Ticket getTicket() const;
 
+=======
+public:
+    enum class Mode { View, Edit, New };
+    explicit TicketDialog(Mode mode, QWidget *parent = nullptr);
+    ~TicketDialog();
+
+>>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
 private slots:
     void onEditClicked();
-    void validate();
->>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
 
 private:
     Ui::TicketDialog *ui;
     Mode currentMode;
     void applyMode();
 <<<<<<< HEAD
-=======
     int m_id;
->>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
 };
+
+=======
+};
+>>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
 #endif

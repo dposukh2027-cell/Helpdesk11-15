@@ -4,44 +4,6 @@
  <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
 <<<<<<< HEAD
-   <rect><x>0</x><y>0</y><width>800</width><height>600</height></rect>
-  </property>
-  <property name="windowTitle"><string>Helpdesk</string></property>
-  <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="mainLayout">
-    <item>
-     <layout class="QHBoxLayout" name="filterLayout">
-      <item>
-       <widget class="QLabel" name="lblStatus"><property name="text"><string>Status:</string></property></widget>
-      </item>
-      <item>
-       <widget class="QComboBox" name="comboFilterStatus">
-        <item><property name="text"><string>All</string></property></item>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="lblPriority"><property name="text"><string>Priority:</string></property></widget>
-      </item>
-      <item>
-       <widget class="QComboBox" name="comboFilterPriority">
-        <item><property name="text"><string>All</string></property></item>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="editSearch">
-        <property name="placeholderText"><string>Search...</string></property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnClear"><property name="text"><string>Clear</string></property></widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <widget class="QTableView" name="tableView">
-      <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
-      <property name="alternatingRowColors"><bool>true</bool></property>
-=======
    <rect>
     <x>0</x>
     <y>0</y>
@@ -106,32 +68,50 @@
       <property name="selectionBehavior">
        <enum>QAbstractItemView::SelectRows</enum>
       </property>
->>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+=======
+   <rect><x>0</x><y>0</y><width>800</width><height>600</height></rect>
+  </property>
+  <property name="windowTitle"><string>Helpdesk</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+     <layout class="QHBoxLayout" name="filterLayout">
+      <item>
+       <widget class="QLabel" name="lblStatus"><property name="text"><string>Status:</string></property></widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboFilterStatus">
+        <item><property name="text"><string>All</string></property></item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblPriority"><property name="text"><string>Priority:</string></property></widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboFilterPriority">
+        <item><property name="text"><string>All</string></property></item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="editSearch">
+        <property name="placeholderText"><string>Search...</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnClear"><property name="text"><string>Clear</string></property></widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableView">
+      <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+      <property name="alternatingRowColors"><bool>true</bool></property>
+>>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
      </widget>
     </item>
    </layout>
   </widget>
 <<<<<<< HEAD
-  <widget class="QMenuBar" name="menubar">
-   <widget class="QMenu" name="menuFile"><property name="title"><string>File</string></property><addaction name="actionExit"/></widget>
-   <widget class="QMenu" name="menuTicket"><property name="title"><string>Ticket</string></property></widget>
-   <widget class="QMenu" name="menuView"><property name="title"><string>View</string></property></widget>
-   <widget class="QMenu" name="menuHelp"><property name="title"><string>Help</string></property></widget>
-   <addaction name="menuFile"/><addaction name="menuTicket"/><addaction name="menuView"/><addaction name="menuHelp"/>
-  </widget>
-  <widget class="QToolBar" name="toolBar">
-   <property name="toolButtonStyle"><enum>Qt::ToolButtonTextBesideIcon</enum></property>
-   <addaction name="actionNew"/><addaction name="actionView"/><addaction name="actionEdit"/><addaction name="actionDelete"/><addaction name="actionRefresh"/>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionNew"><property name="text"><string>New</string></property></action>
-  <action name="actionView"><property name="text"><string>View</string></property></action>
-  <action name="actionEdit"><property name="text"><string>Edit</string></property></action>
-  <action name="actionDelete"><property name="text"><string>Delete</string></property></action>
-  <action name="actionRefresh"><property name="text"><string>Refresh</string></property></action>
-  <action name="actionExit"><property name="text"><string>Exit</string></property></action>
- </widget>
-=======
   <widget class="QToolBar" name="mainToolBar">
    <property name="toolButtonStyle">
     <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -166,5 +146,25 @@
  </widget>
  <resources/>
  <connections/>
->>>>>>> 0bd88b1ea15d28da156bab7c212583a891174f30
+=======
+  <widget class="QMenuBar" name="menubar">
+   <widget class="QMenu" name="menuFile"><property name="title"><string>File</string></property><addaction name="actionExit"/></widget>
+   <widget class="QMenu" name="menuTicket"><property name="title"><string>Ticket</string></property></widget>
+   <widget class="QMenu" name="menuView"><property name="title"><string>View</string></property></widget>
+   <widget class="QMenu" name="menuHelp"><property name="title"><string>Help</string></property></widget>
+   <addaction name="menuFile"/><addaction name="menuTicket"/><addaction name="menuView"/><addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="toolButtonStyle"><enum>Qt::ToolButtonTextBesideIcon</enum></property>
+   <addaction name="actionNew"/><addaction name="actionView"/><addaction name="actionEdit"/><addaction name="actionDelete"/><addaction name="actionRefresh"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew"><property name="text"><string>New</string></property></action>
+  <action name="actionView"><property name="text"><string>View</string></property></action>
+  <action name="actionEdit"><property name="text"><string>Edit</string></property></action>
+  <action name="actionDelete"><property name="text"><string>Delete</string></property></action>
+  <action name="actionRefresh"><property name="text"><string>Refresh</string></property></action>
+  <action name="actionExit"><property name="text"><string>Exit</string></property></action>
+ </widget>
+>>>>>>> 98a108b29e2f13524abc3728ae1e33cd1e9c3d76
 </ui>
